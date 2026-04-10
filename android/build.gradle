@@ -1,0 +1,46 @@
+group 'com.guilherme.pos_printer'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.0'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url = uri("${project(":pos_printer_unity").projectDir}/repo")
+        }
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    namespace 'com.guilherme.pos_printer'
+    compileSdk 34
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 34
+    }
+}
+
+dependencies {
+    implementation 'androidx.annotation:annotation:1.7.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.xcheng:printerservice:1.0.0'
+}

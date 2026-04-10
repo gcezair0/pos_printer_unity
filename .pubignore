@@ -1,0 +1,17 @@
+# Files to exclude from pub.dev package
+PUBLISHING_PLAN.md
+CONTRIBUTING.md
+.DS_Store
+*.log
+
+# Development files
+.vscode/
+.idea/
+*.iml
+
+# Duplicate SDKs (only android/repo/ is used)
+android/libs/
+android/positivo_sdk/
+
+# Test app
+pos_printer_test_app/
