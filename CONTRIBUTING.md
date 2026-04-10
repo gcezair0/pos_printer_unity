@@ -6,7 +6,7 @@ Obrigado pelo interesse em contribuir! 🎉
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/guilherme/pos_printer_unity.git
+   git clone https://github.com/gcezair0/pos_printer_unity.git
    cd pos_printer_unity
    ```
 
