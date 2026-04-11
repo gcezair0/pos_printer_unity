@@ -1,2 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- PAX terminal printer permission -->
+    <uses-permission android:name="com.pax.permission.PRINTER" />
+
+    <!-- PAX SDK native libs require extraction to the app's lib directory -->
+    <application android:extractNativeLibs="true" />
 </manifest>

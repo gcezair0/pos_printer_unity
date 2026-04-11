@@ -20,7 +20,7 @@ A unified Flutter plugin for **POS terminal thermal printers**. One API, multipl
 | Brand | Models | Status |
 |-------|--------|--------|
 | **Positivo** | L3, L400 | ✅ Supported |
-| PAX | A910, A920 | 🔜 Planned |
+| **PAX** | A910, A920, A920Pro, A930, A800, A35 | ✅ Supported |
 | Gertec (GPOS) | GPOS700, GPOS720 | 🔜 Planned |
 | POSMP | APOS A8, DX8000 | 🔜 Planned |
 | Ingenico | SafraPay terminals | 🔜 Planned |

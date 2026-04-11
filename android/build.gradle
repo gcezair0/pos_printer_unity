@@ -43,4 +43,5 @@ dependencies {
     implementation 'androidx.annotation:annotation:1.7.1'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.xcheng:printerservice:1.0.0'
+    implementation 'com.pax:paxsdk:1.0.0'
 }

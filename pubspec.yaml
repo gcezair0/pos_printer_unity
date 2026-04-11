@@ -2,7 +2,7 @@ name: pos_printer_unity
 description: >
   A unified Flutter plugin for POS terminal printers. Supports Positivo (L3, L400),
   PAX, Gertec, Ingenico and more through a single, clean API.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/gcezair0/pos_printer_unity
 repository: https://github.com/gcezair0/pos_printer_unity
 issue_tracker: https://github.com/gcezair0/pos_printer_unity/issues

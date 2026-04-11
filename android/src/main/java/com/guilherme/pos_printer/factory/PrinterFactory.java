@@ -5,6 +5,7 @@ import android.os.Build;
 import android.util.Log;
 
 import com.guilherme.pos_printer.core.IPrinterAdapter;
+import com.guilherme.pos_printer.printers.pax.PaxPrinterAdapter;
 import com.guilherme.pos_printer.printers.positivo.PositivoPrinterAdapter;
 
 /**
@@ -32,9 +33,10 @@ public class PrinterFactory {
             case "POSITIVO":
                 return new PositivoPrinterAdapter(context);
 
+            case "PAX":
+                return new PaxPrinterAdapter(context);
+
             // TODO: Implement other brands
-            // case "PAX":
-            //     return new PaxPrinterAdapter(context);
             // case "GERTEC":
             //     return new GertecPrinterAdapter(context);
             // case "POSMP":
@@ -64,11 +66,13 @@ public class PrinterFactory {
             return new PositivoPrinterAdapter(context);
         }
 
-        // TODO: Add more models as you implement adapters
-        // PAX: A910, A920, etc.
-        // if ("A910".equals(model) || "A920".equals(model)) {
-        //     return new PaxPrinterAdapter(context);
-        // }
+        // PAX: A910, A910S, A920, A920Pro, etc.
+        if (model.startsWith("A910") || model.startsWith("A920") ||
+                model.startsWith("A930") || model.startsWith("A800") ||
+                model.startsWith("A35")) {
+            Log.i(TAG, "Detected PAX terminal: " + model);
+            return new PaxPrinterAdapter(context);
+        }
 
         // Gertec / GPOS
         // if ("GPOS700".equals(model) || "GPOS720".equals(model)) {
