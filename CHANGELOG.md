@@ -1,6 +1,6 @@
 ## 0.0.2
 
-* Added PAX terminal support (A910, A920, A920Pro, A930, A800, A35).
+* Added PAX terminal support (A910, A920, A920Pro, A930, A910S).
 * PAX Neptune Lite SDK integration.
 * Auto-detection for PAX device models.
 
