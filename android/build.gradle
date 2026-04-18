@@ -29,8 +29,8 @@ android {
     compileSdk 34
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     defaultConfig {
@@ -43,5 +43,7 @@ dependencies {
     implementation 'androidx.annotation:annotation:1.7.1'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.xcheng:printerservice:1.0.0'
+    implementation 'com.pomsp:pomspsdk:1.0.0'
     implementation 'com.pax:paxsdk:1.0.0'
+    implementation 'com.sunmi:printerlibrary:1.0.24'
 }

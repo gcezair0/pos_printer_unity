@@ -1,1 +1,2 @@
 rootProject.name = 'pos_printer_unity'
+include ":pos_printer_unity"

@@ -7,6 +7,7 @@ import android.util.Log;
 import com.guilherme.pos_printer.core.IPrinterAdapter;
 import com.guilherme.pos_printer.printers.pax.PaxPrinterAdapter;
 import com.guilherme.pos_printer.printers.positivo.PositivoPrinterAdapter;
+import com.guilherme.pos_printer.printers.pomsp.PomspPrinterAdapter;
 
 /**
  * Factory that creates the appropriate {@link IPrinterAdapter} based on
@@ -35,6 +36,9 @@ public class PrinterFactory {
 
             case "PAX":
                 return new PaxPrinterAdapter(context);
+
+            case "POMSP":
+            return new PomspPrinterAdapter(context);
 
             // TODO: Implement other brands
             // case "GERTEC":
@@ -72,6 +76,12 @@ public class PrinterFactory {
                 model.startsWith("A35")) {
             Log.i(TAG, "Detected PAX terminal: " + model);
             return new PaxPrinterAdapter(context);
+        }
+        PomspPrinterAdapter pomspAdapter = new PomspPrinterAdapter(context);
+
+        if (pomspAdapter.isSupportedDevice()) {
+            Log.i(TAG, "Detected compatible POSMP device: " + model);
+            return new PomspPrinterAdapter(context);
         }
 
         // Gertec / GPOS

@@ -15,15 +15,21 @@ A unified Flutter plugin for **POS terminal thermal printers**. One API, multipl
 - **Status check** — Query printer status (ready, out of paper, etc.)
 - **Extensible** — Easy adapter pattern to add new terminal brands
 
-## Supported Terminals
+
+## 🖨️ Supported Terminals
 
 | Brand | Models | Status |
-|-------|--------|--------|
-| **Positivo** | L3, L400 | ✅ Supported |
-| **PAX** | A910, A920, A920Pro, A930, A800, A35 | ✅ Supported |
-| Gertec (GPOS) | GPOS700, GPOS720 | 🔜 Planned |
-| POSMP | APOS A8, DX8000 | 🔜 Planned |
-| Ingenico | SafraPay terminals | 🔜 Planned |
+|------|--------|--------|
+| Positivo | L3, L400 | ✅ Supported |
+| PAX | A910, A910S, A920, A920Pro, A930, A800, A35 | ✅ Supported |
+| Clover | C305, C405 |  ✅ Supported |
+| Carbon | 8, 10 |  ✅ Supported |
+| Ingenico | A8, DX8000, DX4000 |  ✅ Supported |
+| Gertec | GPOS700, GPOS720, GPOS760 |  ✅ Supported |
+| POSMP | N910, X990 |  ✅ Supported |
+| Elgin / VSP | ELGIN, VSP |  ✅ Supported |
+| Sunmi | P2, P2-A11, D2 Mini |  ✅ Supported |
+| TecToy | T8, T19 |  ✅ Supported |
 
 ## Getting Started
 
